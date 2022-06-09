@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <header>
+        <h1 style="font-family: 'Brush Script MT', cursive;" >Parking System</h1>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <ul>
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="https://cdn.pixabay.com/photo/2016/12/31/01/43/auto-1941988_960_720.png" width="112" height="28">
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <li><a class="navbar-item" href="#">Home</a></li>
+        
+              <li><a class="navbar-item" href="../empleados">Empleados</a></li>
+        
+              <div class="navbar-item has-dropdown is-hoverable">
+                <li><a class="navbar-item">Cargos</a></li>
+
+        
+                <div class="navbar-dropdown">
+                  <li><a class="navbar-item" href="../administradores">Administradores</a></li>
+                  <li><a class="navbar-item" href="../ejecutivos">Ejecutivos</a></li>
+                  <li><a class="navbar-item" href="../general">General</a></li>
+                </div>
+              </div>
+            </div>
+        
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-light">
+                    Log in
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <div class="hide">
+          <i class="fa fa-bars" aria-hidden="true"></i> See less
+        </div>
+        </nav>
+      </header>
+
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script>
+        $(".hide").on('click', function() {
+          $("nav ul").toggle('slow');
+        })
+      </script>
+      
+    <table border="1" style="float:left;" width="40%" cellspacing="0" cellpadding="0">
+      <caption> <h2>Puestos ocupados</h2></caption>
+      <tr class="destacado">
+        <td>Placa</td>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Cargo</td>
+        <td>Puesto</td>
+
+
+      </tr>
+      <tr>
+        <td><a>ABC123</a></td>
+        <td><a>Juan</a></td>
+        <td><a>Perez</a></td>
+        <td><a>Ejecutivo</a></td>
+        <td><a>Preferencial</a></td>
+
+
+      </tr>
+
+      <tr>
+        <td><a>DDD111</a></td>
+        <td><a>Joshep</a></td>
+        <td><a>Smith</a></td>
+        <td><a>Administrador</a></td>
+        <td><a>Reservado</a></td>
+
+      </tr>
+
+    </div>
+  </section>
+  </body>
+</html>
+
